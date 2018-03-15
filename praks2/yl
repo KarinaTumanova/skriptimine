@@ -1,0 +1,8 @@
+#!/bin/bash
+#minu esimene skript 
+
+echo -n "Tere, " #väljasta ilma reavahetuseta
+echo -n "Karina" #väljasta ilma reavahetuseta
+echo  "!" #väljasta ! ja tee reavahetus
+#
+#skripti lõpp
