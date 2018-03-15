@@ -2,8 +2,8 @@
 
 #kasutajate nimekiri kujul Nimi
 
-who | cut -f1 -d" " | cut -f2 -d"." > perenimi #kuna mul on pandud ainult eesnimed ta perenimesid ei näita
-who | cut -f1 -d" " | cut -f1 -d"." > eesnimi
+who | cut -f1 -d" " | cut -f2 -d" " > perenimi #kuna mul on pandud ainult eesnimed ta perenimesid ei näita
+awk | cut -f1 -d" " | cut -f1 -d" " > eesnimi
 paste -d"." perenimi eesnimi > nimed
 cat nimed | sort | uniq 
 
