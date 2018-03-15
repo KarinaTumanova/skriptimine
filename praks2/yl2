@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -n "Karina "
+echo -n "Tumanova, "
+echo "ISP117"
+echo "Antud aine on väga huvitav!"
+
