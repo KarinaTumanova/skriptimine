@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Today is" $(date '+%A, %B %d, %Y'); #väljastab lause alguse Today is ning hetkese nädalapäeva, kuu, kuupäeva ning aasta
+echo "Time is" $(date +"%H:%M"); #väljastab lause alguse Time is ning hetkese kellaaja
+echo "Here is this month's calendar" #väljastab selle lause
+
+cal #väljastab praeguse kalendri
+
+#Skripti lõpp
