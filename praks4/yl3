@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Mitu reisijat on grupis: " #laseb sisestada reisijate arvu
+read reisijad #reisijate arv
+echo "Mitu kohta on bussis: " #laseb sisestada kohtade arvu
+read kohad #kohtade arv
+
+maha=`expr $kohad - $reisijad`
+taidetud=`expr $reisijad / $kohad`
+
+
+echo "Täidetud on $taidetud bussi ning $maha inimest ei mahu"
