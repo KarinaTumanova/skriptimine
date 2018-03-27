@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#skripti algus
+
+echo "Skriptimine at " #väljastab lause Skriptimine at
+date +"%T" #väljastab täpse aja
+uptime -p #väljastab ning näitab kui kaua on masin käinud
+
+#skripti lõpp
