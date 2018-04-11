@@ -1,0 +1,12 @@
+#!/bin/bash
+echo
+echo -n "Sisestage a kylje vaartus: " #sisestatakse külje a väärtus
+read a # külje a väärtus
+echo -n "Sisestage b kylje vaartus: " #sisestatakse külje b väärtus
+read b # külg b
+echo -n "Sisestage c kylje vaartus: " #sisestatakse külje c väärtus
+read c # külg c
+
+p= `echo "scale=2;($a+$b+$c)/2" | bc` #pool kolmnurga ümbermõõtu
+s= `echo "scale=2;sqrt($p*($p-$a)*($p-$b)*($p-$c))" | bc` #pindala arvutamine
+echo "Pindala = $s" #tulemuse väljastamine
