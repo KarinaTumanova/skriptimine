@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Pyhapäev - 0, Esmaspäev - 1, Teisipäev - 3, ..., Laupäev -6" #näitab, kuidas tähistatakse päevi
+echo -n "Sisestage oma ära sõitmise päev: " #palub sisestada ära sõitmise päeva numbri
+read esimene #ära sõitmise päev
+echo -n "Sisestage, mitu ööpäeva olete reisil: " #palub sisestada, mitu ööpäeva ollakse reisil
+read paevad #ööpäevad
+veel=$(($paevad %7)) #arvutatakse arvud ning vaadatakse palju üle jääb
+lopp=$(($esimene+$veel)) ##arvutatakse, mitmendal päeval tullakse tagasi
+
+echo "Olete tagasi päeval number $lopp" # väljastatakse, millal on tagasitulek
