@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo -n "Sisesta enda vanus :" #kasutaja sisestab enda vanuse
+read vanus #vanus
+
+
+if [[ $vanus -ge 0 ]] && [[ $vanus -le 11 ]] #kui vanus on vahemikus 0-11
+then
+	echo "Oled laps!"  #oled sa laps
+
+fi
+
+if [[ $vanus -ge 12 ]] && [[ $vanus -le 17 ]] #kui vanus on vahemikus 12-17
+then
+	echo "Oled nooruk!" #oled nooruk
+fi
+
+if [[ $vanus -ge 18 ]] && [[ $vanus -le 62 ]] #kui vanus on vahemikus 18-63
+then
+	echo "Oled täiskasvanu!" #oled täiskasvanu
+fi
+
+if [[ $vanus -ge 63 ]] && [[ $vanus -le 100 ]] #kui vanus on 63-100
+then
+	echo "Oled senjoor!" #oled senjoor
+fi
