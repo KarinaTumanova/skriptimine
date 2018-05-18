@@ -1,0 +1,18 @@
+
+#!/bin/bash
+echo -n "Sisestage ridade arv: "
+read arv
+for(( r=1; r<=arv; r++ )) #rea numbrid
+do
+echo -n "$r. " #türkib rea numbri
+ for(( v=1; v<=($arv-$r); v++ ))
+ do
+  echo -n "o " #trükib o tähe
+ done
+ for(( v=1; v<=$r; v++ ))
+ do
+  echo -n "* " #trükib tärni
+ done
+ echo
+done
+#lõpp
